@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Initiatives</title>
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <h2 class="recentNewslettersHeading">Our Initiatives</h2>
+    </div>
+
+    <div id="initiativeBtns">
+        <button class="initiativeBtn active" onclick="showContent('jvm')">Jagriti Vidya Mandir</button>
+        <button class="initiativeBtn" onclick="showContent('prayas')">Prayas</button>
+        <button class="initiativeBtn" onclick="showContent('light')">Light</button>
+        <button class="initiativeBtn" onclick="showContent('rise')">Rise</button>
+    </div>
+    <div id="content">
+        JVM aspires to be a residential full-fledged school for students of under privileged families offering a variety
+        of courses at +2 level, vocational training and career guidance. We seek to take Jagriti Vidya Mandir to beyond
+        its current primary level to complete school cum hostel Catering to the needs of over 500 students. The facility
+        will not only provide education up to 12th grade, but will also take responsibility for ensuring that its
+        students settle in their professional or educational lives before they leave.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem
+            doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum
+            labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam
+            accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt
+            porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque
+            molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem
+            est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum
+            dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda
+            reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea
+            aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis
+            ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam
+            libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis
+            nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti
+            eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem
+            doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum
+            labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam
+            accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt
+            porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque
+            molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem
+            est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum
+            dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda
+            reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea
+            aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis
+            ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam
+            libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis
+            nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti
+            eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        var header = document.getElementById("initiativeBtns");
+        var btns = header.getElementsByClassName("initiativeBtn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+        function showContent(parameter) {
+            console.log("vvv")
+            var content = document.getElementById("content")
+            if (parameter == "jvm") {
+                content.innerHTML = `<div id="jvmContent">
+        JVM aspires to be a residential full-fledged school for students of under privileged families offering a variety of courses at +2 level, vocational training and career guidance. We seek to take Jagriti Vidya Mandir to beyond its current primary level to complete school cum hostel Catering to the needs of over 500 students. The facility will not only provide education up to 12th grade, but will also take responsibility for ensuring that its students settle in their professional or educational lives before they leave.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.</p>
+    </div>`
+            }
+            else if (parameter == 'prayas') {
+                content.innerHTML = `<div id="prayasContent">
+        <p>
+            PRAYAS exists to deliver Gopali Youth Welfare Society's learnings, expertise & experience to involve Youth in social problem solving to the youth throughout the nation.
+        </p>
+        <p>
+            We plan to involve our centers into the end-to-end development of a nation-wide social intiative for the initial period, with an aim to empower them with the required skills to identify problems in their own locality and design social initiatives as they mature.
+        </p>
+        <p>
+            We aim to build a network of autonomous student-run centers across India, to provide them with a platform for ensuring the fulfillment of Sustainable Development Goals for the weaker sections of the Society.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.
+        </p>
+    </div>`
+            }
+            else if (parameter == 'light') {
+                content.innerHTML = `<div id="lightContent">
+                    <p>
+                        LiGHT exist to deliver Gopali Youth Welfare Society's learnings, expertise & experience to involve Youth in social problem solving to the youth throughout the nation.
+                    </p>
+                    <p>
+                        We plan to involve our centers into the end-to-end development of a nation-wide social intiative for the initial period, with an aim to empower them with the required skills to identify problems in their own locality and design social initiatives as they mature.
+                    </p>
+                    <p>
+                        We aim to build a network of autonomous student-run centers across India, to provide them with a platform for ensuring the fulfillment of Sustainable Development Goals for the weaker sections of the Society.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.
+                    </p>
+    </div>`
+            }
+            else if (parameter == 'rise') {
+                content.innerHTML = `<div id="riseContent">
+                    <p>
+                        Rise Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo repellendus eum itaque rem doloribus aut, nesciunt optio sed ad mollitia aperiam nisi nemo sunt architecto magni culpa quis rerum labore quae neque officia. Est unde quia numquam nobis fugiat, eum impedit illo laudantium quo aperiam accusantium porro asperiores vero doloribus aliquam qui dignissimos? Animi, est accusantium! Iste nesciunt porro ab nostrum dignissimos quaerat, maxime veritatis unde libero ipsum nam harum blanditiis illum neque molestiae provident non quos ad accusantium soluta, consequuntur nemo, sit tenetur assumenda! Magnam autem est dolores maxime, quos porro reprehenderit quidem optio laudantium similique provident sapiente ipsum dolore libero molestiae illo aliquid, nam ex asperiores. Laboriosam architecto illo amet assumenda reprehenderit. Dicta nam neque quos ipsa similique dolores minima vitae qui esse nostrum nemo dolorum eos ea aliquam hic veritatis magnam quis, non dolor praesentium. Dolorum ut repellendus aliquam iste blanditiis ratione obcaecati nobis, reiciendis at mollitia iusto accusamus officiis facilis consectetur vel. Ad veniam libero est tempore accusantium, maiores delectus saepe atque laborum, nihil eaque sed commodi perspiciatis nisi culpa possimus ea recusandae cumque? Nulla nostrum aperiam, quasi aliquam sequi inventore corrupti eveniet eaque molestias porro ipsum unde numquam necessitatibus ullam! Incidunt libero iusto ducimus.
+                    </p>
+    </div>`
+            }
+        }
+    </script>
+</body>
+
+</html>
