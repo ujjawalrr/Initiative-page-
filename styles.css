@@ -23,6 +23,24 @@
   background-image: linear-gradient(to right, #fee180 0%, #fec301 100%);
   color: white;
 }
+.initiativeBtn2 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  color: rgb(53, 58, 65);
+  border: none;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  transition-property: linear-gradient;
+  transition-duration: 1s;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, #fec301 0%, #fee180 100%);
+  cursor: pointer;
+}
+.initiativeBtn2:hover {
+  background-image: linear-gradient(to right, #fee180 0%, #fec301 100%);
+  color: white;
+}
 #content{
     padding: 0 8vw;
     text-align: justify;
